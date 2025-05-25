@@ -18,7 +18,10 @@ function SignIn() {
   };
 
   return (
-    <div className="flex h-screen items-center mt-24 md:mt-20 lg:mt-28 xl:mt-24 pb-5 Urbanist">
+    <>
+    <div className=" h-screen  mt-24 md:mt-20 lg:mt-28 xl:mt-24 pb-5 Urbanist">
+      <div className="container-sm flex items-center">
+
       {/* Left Side - Image and Welcome */}
       <div className="w-1/2 relative hidden md:flex flex-col justify-center items-center bg-cover bg-center" style={{ backgroundImage: image }}>
       <img src={image} alt="" />
@@ -30,7 +33,7 @@ function SignIn() {
       </div>
 
       {/* Right Side - Form */}
-      <div className="w-full md:w-1/2 flex justify-center items-center dark:bg-blackColor bg-gray-100 h-screen">
+      <div className="w-full md:w-1/2 flex justify-center items-center dark:bg-blackColor bg-gray-100 h-screen ">
         <div className="w-[90%] sm:w-[80%] md:w-[60%] lg:w-[400px] p-8 shadow-xl rounded-xl bg-white dark:bg-gray-600">
           <h2 className="text-center text-2xl font-semibold mb-6">Sign in to internee.pk</h2>
           <button className="w-full bg-white border border-gray-300 rounded-xl px-4 py-2 mb-4 hover:shadow-md">
@@ -63,7 +66,7 @@ function SignIn() {
                 
                 
                 required
-              />
+                />
               <span className="absolute right-3 top-9 cursor-pointer" onClick={handleToggle}>
                 <Icon icon={icon} size={20} />
               </span>
@@ -82,7 +85,9 @@ function SignIn() {
           </p>
         </div>
       </div>
+                </div>
     </div>
+                </>
   );
 }
 

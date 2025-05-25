@@ -63,7 +63,7 @@ function NavBar() {
   return (
     <div className={`navbar-container p-0 m-0 border-b-2 dark:border-gray-700 border-gray-200 ${isSticky ? "fade-in" : ""} bg-whiteColor text-black dark:bg-darkgray dark:text-white Urbanist`}>
       <div className="container-sm my-auto">
-        <Navbar expand="lg" className="nav-bar items-center h-20 text-sm p-0 m-0 container bg-whiteColor text-black dark:bg-darkgray dark:text-white" expanded={expanded}>
+        <Navbar expand="lg" className="nav-bar items-center      bg-whiteColor text-black dark:bg-darkgray dark:text-white" expanded={expanded}>
           <Navbar.Brand className="me-auto w-36 md:w-18 lg:w-52" href="/">
             <img src=
                {theme === "light" ? 
@@ -109,16 +109,16 @@ function NavBar() {
 
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto items-center text-sm bg-whiteColor dark:bg-darkgray z-10 font-semibold  ">
-              <Link to="/" className="nav-link  dark:text-white hover:text-greenColor dark:hover:text-greenColor" onClick={handleToggle}>
+              <Link to="/" className="nav-link  dark:text-white hover:text-greenColor dark:hover:text-greenColor px-3" onClick={handleToggle}>
                 Home
               </Link>
-              <Link to="/internship" className="nav-link  dark:text-white hover:text-greenColor dark:hover:text-greenColor" onClick={handleToggle}>
+              <Link to="/internship" className="nav-link  dark:text-white hover:text-greenColor dark:hover:text-greenColor px-3" onClick={handleToggle}>
                 Internship
               </Link>
-              <Link to="/graduateprogram" className="nav-link  dark:text-white hover:text-greenColor dark:hover:text-greenColor" onClick={handleToggle}>
+              <Link to="/graduateprogram" className="nav-link  dark:text-white hover:text-greenColor dark:hover:text-greenColor px-3" onClick={handleToggle}>
                 Graduate Program
               </Link>
-              <Link to="/studentambassadors" className="nav-link  dark:text-white hover:text-greenColor dark:hover:text-greenColor" onClick={handleToggle}>
+              <Link to="/studentambassadors" className="nav-link  dark:text-white hover:text-greenColor dark:hover:text-greenColor px-3" onClick={handleToggle}>
                 Student Ambassador
               </Link>
 
