@@ -5,6 +5,7 @@ import { Icon } from "react-icons-kit";
 import { eyeOff } from "react-icons-kit/feather/eyeOff";
 import { eye } from "react-icons-kit/feather/eye";
 import GoogleIcon from '../../assets/images/googleIcon.svg';
+import { useState } from "react";
 
 
 function SignUp() {

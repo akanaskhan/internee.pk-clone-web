@@ -1,7 +1,4 @@
-@font-face {
-  font-family: poppins;
-  src: url(./assets/fonts/ProximaNova-Regular.otf);
-}
+
 @font-face {
   font-family: Urbanist;
   src: url(./assets/fonts/Urbanist.ttf);
@@ -15,7 +12,6 @@ body {
   background: var(--bs-black);
 }
 
-/* HTML: <div class="loader"></div> */
 .loader {
   width: 20px;
   aspect-ratio: 1;
@@ -123,8 +119,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 10px 20px; */
-  background-color: black; /* Adjust background color */
+  background-color: black; 
   color: white;
 }
 
@@ -135,11 +130,11 @@ body {
 }
 
 .toggle-icon {
-  transition: transform 0.5s ease; /* Smooth transition */
+  transition: transform 0.5s ease; 
 }
 
 .toggle-icon.expanded {
-  transform: rotate(90deg); /* Rotate the icon when expanded */
+  transform: rotate(90deg); 
 }
 
 

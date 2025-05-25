@@ -14,17 +14,16 @@ createRoot(document.getElementById("root")).render(
   <QueryClientProvider client={queryClient}>
      <HelmetProvider>
 
-   
      
         <ThemeContextProvider>
 
-      
+       
             <AppRouter />
-        
+       
         </ThemeContextProvider>
      
          
-    
+   
      </HelmetProvider>
   </QueryClientProvider>
 );
