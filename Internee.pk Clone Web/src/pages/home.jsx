@@ -11,28 +11,26 @@ import JoinCommunity from "../components/JoinCommunity";
 import UnlockNewOpportunities from "../components/UnlockNewOpportunities";
 
 function Home() {
-  
+
   return (
     <>
-    <div className="dark:bg-blackColor dark:text-themeGray bg-whiteColor">
+      <div className="dark:bg-blackColor dark:text-themeGray bg-whiteColor">
+      
+        <div className="container-sm ">
+          <Intro />
+        </div>
+        <InternshipSection />
+        <TaskPortalSection />
+        <InstructorSection />
+        <CareerLaunchSection />
+        <AIMockInterview />
+        <InternshipProcess />
+        <AICareerJourney />
+        <ShareYourKnowledge />
+        <JoinCommunity />
+        <UnlockNewOpportunities />
 
-    <div className="container-sm ">
-
-      <Intro />
-    
-    </div>
-      <InternshipSection/>
-      <TaskPortalSection/>
-    <InstructorSection/>
-  <CareerLaunchSection/>
-    <AIMockInterview/>
-    <InternshipProcess/>
-    <AICareerJourney/>
-    <ShareYourKnowledge/>
-    <JoinCommunity/>
-    <UnlockNewOpportunities/>
-
-    </div>
+      </div>
     </>
   );
 }
