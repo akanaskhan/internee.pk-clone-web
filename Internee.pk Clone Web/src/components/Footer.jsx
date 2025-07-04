@@ -2,10 +2,14 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaPhoneAlt } from "r
 import logo from "../assets/images/white-internee.png";
 import logoGreen from "../assets/images/logo-green.png";
 import { useTheme } from "../context/ThemeContext";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
     const { theme, toggleTheme } = useTheme();
-  
+   const scrollToTop = () => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+  };
   return ( 
     <footer className=" dark:bg-darkgray dark:text-whiteColor  text-themeGray bg-gray-200  Urbanist py-12">       
       <div className=" container-sm  ">
@@ -70,10 +74,11 @@ export default function Footer() {
           <div className="">
             <h4 className="font-bold  mb-4">Company</h4>
             <ul className=" space-y-2">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Student Ambassador</a></li>
-              <li><a href="#">Interns Profiles</a></li>
-              <li><a href="#">About Us</a></li>
+              <li><Link to="/" onClick={scrollToTop}>Home</Link></li>
+              <li><Link to="/studentambassadors" onClick={scrollToTop}>Student Ambassador</Link></li>
+              <li><Link to="/internship" onClick={scrollToTop}>Interns Profiles</Link></li>
+              <li><Link to="/" onClick={scrollToTop}>About Us</Link></li>
+             
             </ul>
           </div>
 

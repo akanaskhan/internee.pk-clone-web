@@ -28,10 +28,10 @@ export default function AICareerJourney() {
                     </div>
                 </div>
 
-                <h2 className="text-3xl md:text-5xl font-bold mb-4">
+                <h2 className="text-3xl md:text-5xl font-bold mb-4 dark:text-whiteColor text-blackColor">
                     AI Career Coach: Your Ultimate Guide to Building a Successful AI Career
                 </h2>
-                <p className="text-white/90 text-base md:text-lg max-w-3xl mb-10 ">
+                <p className=" text-base md:text-lg max-w-3xl mb-10 dark:text-white/90 text-blackColor ">
                     Looking to kickstart your career in the AI industry? Our AI Career Coach platform offers expert guidance in resume building, cover letter creation, interview preparation, quizzes, and industry insights—all designed to help you land your dream job in Artificial Intelligence.              </p>
             </div>
             </div>
